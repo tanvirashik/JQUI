@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- fonts link -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/three/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="img/three.png">
+
+    <title>Three</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
+        <div class="container">
+          <a class="navbar-brand menu_brand" href="index.html">JQUI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="fast.html">One</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="secend.html">Two</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="three.html">Three</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="four.html">Four</a>
+              </li>
+            </ul>
+          </div>
+          <!-- menu end -->
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- Dialog start -->
+    <div class="container">
+      <div class="row mb">
+        <h1 class="font text-danger">Dialog:-</h1>
+        <div class="col-lg-12">
+          <div id="dialog" title="Basic dialog">
+            <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+          </div>
+           
+          <button id="opener" class="btn btn-info">Open Dialog</button>
+        </div>
+        <div class="col-lg-6">
+          <div id="dialog-form" title="Create new user">
+            <p class="validateTips">All form fields are required.</p>
+           
+            <form>
+              <fieldset>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+           
+                <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+              </fieldset>
+            </form>
+          </div>
+           
+           
+          <div id="users-contain" class="ui-widget">
+            <h1>Existing Users:</h1>
+            <table id="users" class="ui-widget ui-widget-content">
+              <thead>
+                <tr class="ui-widget-header ">
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>john.doe@example.com</td>
+                  <td>johndoe1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button id="create-user" class="btn btn-info">Create new user</button>
+        </div>
+      </div>
+    </div>
+    <!-- Dialog end -->
+    <!-- menu start -->
+    <div class="container">
+      <div class="row mb">
+        <h1 class="font text-danger">Menu:-</h1>
+        <div class="col-lg-6">
+          <ul id="menu">
+            <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+            <li><div>Books</div></li>
+            <li><div>Clothing</div></li>
+            <li><div>Electronics</div>
+              <ul>
+                <li class="ui-state-disabled"><div>Home Entertainment</div></li>
+                <li><div>Car Hifi</div></li>
+                <li><div>Utilities</div></li>
+              </ul>
+            </li>
+            <li><div>Movies</div></li>
+            <li><div>Music</div>
+              <ul>
+                <li><div>Rock</div>
+                  <ul>
+                    <li><div>Alternative</div></li>
+                    <li><div>Classic</div></li>
+                  </ul>
+                </li>
+                <li><div>Jazz</div>
+                  <ul>
+                    <li><div>Freejazz</div></li>
+                    <li><div>Big Band</div></li>
+                    <li><div>Modern</div></li>
+                  </ul>
+                </li>
+                <li><div>Pop</div></li>
+              </ul>
+            </li>
+            <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <ul id="menu2">
+            <li>
+              <div><span class="ui-icon ui-icon-disk"></span>Save</div>
+            </li>
+            <li>
+              <div><span class="ui-icon ui-icon-zoomin"></span>Zoom In</div>
+            </li>
+            <li>
+              <div><span class="ui-icon ui-icon-zoomout"></span>Zoom Out</div>
+            </li>
+            <li class="ui-state-disabled">
+              <div><span class="ui-icon ui-icon-print"></span>Print...</div>
+            </li>
+            <li>
+              <div>Playback</div>
+              <ul>
+                <li>
+                  <div><span class="ui-icon ui-icon-seek-start"></span>Prev</div>
+                </li>
+                <li>
+                  <div><span class="ui-icon ui-icon-stop"></span>Stop</div>
+                </li>
+                <li>
+                  <div><span class="ui-icon ui-icon-play"></span>Play</div>
+                </li>
+                <li>
+                  <div><span class="ui-icon ui-icon-seek-end"></span>Next</div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>Learn more about this menu2</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- menu end -->
+    <!-- Progressbar start -->
+    <div class="container">
+      <div class="row mb">
+        <h1 class=" font text-danger">Progressbar:-</h1>
+        <div class="col-lg-6">
+          <div id="progressbar"><div class="progress-label">Loading...</div></div>
+        </div>
+        <div class="col-lg-6">
+          <div id="dialog" title="File Download">
+            <div class="progress-label">Starting download...</div>
+            <div id="progressbar2"></div>
+          </div>
+          <button id="downloadButton">Start Download</button>
+        </div>
+      </div>
+    </div>
+    <!-- Progressbar end -->
+    <!-- Selectmenu start -->
+    <div class="container">
+      <div class="row mb">
+        <h1 class="font text-danger">Selectmenu:-</h1>
+        <div class="col-lg-6">
+          <div class="demo">
+ 
+            <form action="#">
+             
+              <div id="circle"></div>
+             
+              <fieldset>
+                <label for="radius">Circle radius</label>
+                <select name="radius" id="radius">
+                  <option value="50">50px</option>
+                  <option value="100">100px</option>
+                  <option value="150" selected="selected">150px</option>
+                  <option value="200">200px</option>
+                  <option value="250">250px</option>
+                </select>
+             
+                <label for="color">Circle color</label>
+                <select name="color" id="color">
+                  <option value="black">Black</option>
+                  <option value="red">Red</option>
+                  <option value="yellow" selected="selected">Yellow</option>
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                </select>
+              </fieldset>
+             
+            </form>
+             
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="demo">
+ 
+            <form action="#">
+             
+              <fieldset>
+                <label for="speed">Select a speed</label>
+                <select name="speed" id="speed">
+                  <option>Slower</option>
+                  <option>Slow</option>
+                  <option selected="selected">Medium</option>
+                  <option>Fast</option>
+                  <option>Faster</option>
+                </select>
+             
+                <label for="files">Select a file</label>
+                <select name="files" id="files">
+                  <optgroup label="Scripts">
+                    <option value="jquery">jQuery.js</option>
+                    <option value="jqueryui">ui.jQuery.js</option>
+                  </optgroup>
+                  <optgroup label="Other files">
+                    <option value="somefile">Some unknown file</option>
+                    <option value="someotherfile">Some other file with a very long option text</option>
+                  </optgroup>
+                </select>
+             
+                <label for="number">Select a number</label>
+                <select name="number" id="number">
+                  <option>1</option>
+                  <option selected="selected">2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                </select>
+             
+                <label for="salutation">Select a title</label>
+                <select name="salutation" id="salutation">
+                  <option disabled selected>Please pick one</option>
+                  <option>Mr.</option>
+                  <option>Mrs.</option>
+                  <option>Dr.</option>
+                  <option>Prof.</option>
+                  <option>Other</option>
+                </select>
+              </fieldset>
+             
+            </form>
+             
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Selectmenu end -->
+
+    
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/three/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </div>
+</html>
